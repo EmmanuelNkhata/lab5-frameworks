@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Demo - UNZA Lab 5</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen py-12">
+    <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">UNZA Tech Projects</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Responsive card layout built with Tailwind CSS</p>
+        </div>
+
+        <!-- Responsive Card Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                <img 
+                    src="https://images.unsplash.com/photo-1654618977232-a6c6dea9d1e8?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"                    alt="Web Development" 
+                    class="w-full h-48 object-cover"
+                >
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Web Development</h2>
+                    <p class="text-gray-600 mb-4">Learn modern web development with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                        Enroll Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                <img 
+                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                    alt="Data Science" 
+                    class="w-full h-48 object-cover"
+                >
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Data Science</h2>
+                    <p class="text-gray-600 mb-4">Master Python, Pandas, and machine learning fundamentals.</p>
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                        Explore Course
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                <img 
+                    src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                    alt="Mobile Development" 
+                    class="w-full h-48 object-cover"
+                >
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Mobile Development</h2>
+                    <p class="text-gray-600 mb-4">Build cross-platform apps with React Native and Flutter.</p>
+                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Footer -->
+        <div class="mt-12 bg-white rounded-xl shadow-md p-6 max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4">
+                    <p class="text-2xl font-bold text-blue-500">100%</p>
+                    <p class="text-gray-600">Completion Rate</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-2xl font-bold text-blue-500">24/7</p>
+                    <p class="text-gray-600">Support</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-2xl font-bold text-blue-500">500+</p>
+                    <p class="text-gray-600">Students</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-2xl font-bold text-blue-500">10+</p>
+                    <p class="text-gray-600">Courses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

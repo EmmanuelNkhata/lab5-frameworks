@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo - UNZA Lab 5</title>
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Requirement 1a: Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <class="d-inline-block align-text-top me-2">
+                UNZA TechSolutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Requirement 1b: Two-column layout -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="p-4 border rounded-3 shadow-sm h-100">
+                    <h2 class="text-primary mb-3">Lab 5 - Bootstrap</h2>
+                    <p class="lead">This column demonstrates Bootstrap's grid system with responsive behavior.</p>
+                    
+                    <!-- Requirement 1c: Styled Button -->
+                    <button class="btn btn-success px-4 py-2 mt-3" data-bs-toggle="tooltip" title="Sample Tooltip">
+                        <i class="bi bi-check-circle-fill me-2"></i> Success Action
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="p-4 border rounded-3 shadow-sm h-100">
+                    <h3 class="text-warning">Components Showcase</h3>
+                    
+                    <!-- Requirement 1c: Alert -->
+                    <div class="alert alert-warning alert-dismissible fade show mt-3">
+                        <strong>Warning!</strong> This is a Bootstrap alert.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+
+                    <ul class="list-group mt-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Grid System
+                            <span class="badge bg-primary rounded-pill">2 cols</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Components
+                            <span class="badge bg-primary rounded-pill">5+</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Enable tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        })
+    </script>
+</body>
+</html>
