@@ -1,7 +1,7 @@
 Group members 
 Emmanuel Nkhata 2021541703 
 Stephan Nyirenda 2021479412
-eatures Implemented
+features Implemented
 
 ### Bootstrap Demo
 - Built a responsive navbar that collapses on mobile
